@@ -7,7 +7,7 @@ const reduxCreateStore = ()=> createStore(
     load(), 
     compose(
         /*window.devtoolsExtension ? window.devtoolsExtension() : f => f*/
-        window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__()
+        /*window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__()*/
     )
 );
 
