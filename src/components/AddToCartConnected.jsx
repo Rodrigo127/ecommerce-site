@@ -1,6 +1,6 @@
 import React from 'react';
 import { connect, useDispatch } from 'react-redux';
-import { addToCart, addItem } from '../state/actions/shopping_cart';
+import { addItem } from '../state/actions/shopping_cart';
 import AddToCart from './AddToCart';
 
 const AddToCartBtn = ({product}) => {
@@ -16,4 +16,4 @@ const AddToCartBtn = ({product}) => {
 }
 
 const mapStateToProps = (state) => state.shopping_cart;
-export default connect(null, { addToCart })(AddToCartBtn);
+export default connect(null, { addItem })(AddToCartBtn);
